@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📱 App Móvil - Escuela LDU Táctica DT Jarrin
 
 Aplicación móvil desarrollada en **React Native** y **Expo** para la gestión, autenticación y navegación de usuarios (deportistas, entrenadores y administradores) de la escuela de fútbol.
