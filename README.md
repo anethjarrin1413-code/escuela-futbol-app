@@ -15,4 +15,4 @@ Este proyecto nació de la necesidad real de optimizar y digitalizar la gestión
 - [ ] Lógica para gestión de alumnos y horarios.
 
 ## 📱 Vista Previa
-![Demostración de la App](./Gif.gif)
+![Demostración de la App](./Avances.gif)
