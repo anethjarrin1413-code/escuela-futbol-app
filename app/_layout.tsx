@@ -26,6 +26,9 @@ export default function RootLayout() {
         <Stack.Screen name="deportista/horario" options={{ headerShown: false }} />
         <Stack.Screen name="deportista/asistencia" options={{ headerShown: false }} />
         <Stack.Screen name="deportista/pagos" options={{ headerShown: false }} />
+        <Stack.Screen name="entrenador/deportistas" options={{ headerShown: false }} />
+        <Stack.Screen name="entrenador/horarios" options={{ headerShown: false }} />
+        <Stack.Screen name="entrenador/asistencia" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

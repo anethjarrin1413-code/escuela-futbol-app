@@ -1,13 +1,13 @@
 import { useRouter } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function DeportistaPagos() {
+export default function EntrenadorDeportista() {
   const router = useRouter(); 
   return (
     <View style={styles.container}> 
 
     <Text style={[styles.title, styles.italicText]}> 
-             PANEL DEPORTISTA
+             PANEL ENTRENADOR
           </Text>
     
           <Text style={styles.welcome}>
