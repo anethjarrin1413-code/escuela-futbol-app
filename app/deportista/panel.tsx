@@ -29,20 +29,22 @@ export default function DeportistaPanel(){
             </Text>
         </Pressable>
 
-        <Pressable style={styles.button}>
-           {/* onPress = {() => router.push('/deportista/horario')}> */}
+        <Pressable style={styles.button}
+            onPress = {() => router.push('/deportista/horario')}> 
             <Text style={styles.buttonText}>
                📅 HORARIO
             </Text>
         </Pressable>
 
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button}
+            onPress = {() => router.push('/deportista/asistencia')}>
             <Text style={styles.buttonText}>
                ✅ ASISTENCIA
             </Text>
         </Pressable>
 
-         <Pressable style={styles.button}>
+         <Pressable style={styles.button}
+            onPress = {() => router.push('/deportista/pagos')}>
             <Text style={styles.buttonText}>
                💳 PAGOS
             </Text>
