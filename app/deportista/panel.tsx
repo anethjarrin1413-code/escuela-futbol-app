@@ -1,6 +1,6 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function AdministracionPanel(){
+export default function DeportistaPanel(){
   return(
     <View style={styles.container}> 
         
