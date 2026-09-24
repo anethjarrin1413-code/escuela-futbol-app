@@ -22,6 +22,8 @@ export default function RootLayout() {
         <Stack.Screen name="administracion/panel" options={{ headerShown: false }} />
         <Stack.Screen name="deportista/panel" options={{ headerShown: false }} />
         <Stack.Screen name="entrenador/panel" options={{ headerShown: false }} />
+        <Stack.Screen name="deportista/perfil" options={{ headerShown: false }} />
+        <Stack.Screen name="deportista/horario" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

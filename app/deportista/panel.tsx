@@ -1,6 +1,8 @@
+import { useRouter } from 'expo-router';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function DeportistaPanel(){
+    const router = useRouter();
   return(
     <View style={styles.container}> 
         
@@ -20,13 +22,15 @@ export default function DeportistaPanel(){
 
       <View style={styles.menu}>
 
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button}
+            onPress = {() => router.push('/deportista/perfil')}>
             <Text style={styles.buttonText}>
                👤 PERFIL
             </Text>
         </Pressable>
 
         <Pressable style={styles.button}>
+           {/* onPress = {() => router.push('/deportista/horario')}> */}
             <Text style={styles.buttonText}>
                📅 HORARIO
             </Text>
