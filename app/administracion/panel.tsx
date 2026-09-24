@@ -1,6 +1,8 @@
+import { useRouter } from 'expo-router';
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function AdministracionPanel(){
+    const router = useRouter();
   return(
     <View style={styles.container}> 
         
@@ -20,37 +22,43 @@ export default function AdministracionPanel(){
 
       <View style={styles.menu}>
 
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button}
+            onPress = {() => router.push('/administracion/deportistas')}> 
             <Text style={styles.buttonText}>
                👥 DEPORTISTAS
             </Text>
         </Pressable>
 
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button}
+            onPress = {() => router.push('/administracion/deportistas')}> 
             <Text style={styles.buttonText}>
                👨‍👩‍👧 REPRESENTANTES
             </Text>
         </Pressable>
 
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button}
+            onPress = {() => router.push('/administracion/categorias')}> 
             <Text style={styles.buttonText}>
                🏷️ CATEGORÍAS
             </Text>
         </Pressable>
 
-         <Pressable style={styles.button}>
+         <Pressable style={styles.button}
+            onPress = {() => router.push('/administracion/horarios')}> 
             <Text style={styles.buttonText}>
                📅 HORARIOS
             </Text>
         </Pressable>
 
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button}
+            onPress = {() => router.push('/administracion/asistencia')}> 
             <Text style={styles.buttonText}>
                ✅ ASISTENCIA
             </Text>
         </Pressable>
 
-          <Pressable style={styles.button}>
+          <Pressable style={styles.button}
+            onPress = {() => router.push('/administracion/pagos')}> 
             <Text style={styles.buttonText}>
                💰 PAGOS
             </Text>
