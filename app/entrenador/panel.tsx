@@ -1,6 +1,6 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function DeportistaPanel(){
+export default function EntrenadorPanel(){
   return(
     <View style={styles.container}> 
         
@@ -11,7 +11,7 @@ export default function DeportistaPanel(){
       />
 
       <Text style={[styles.title, styles.italicText]}> 
-         PANEL DEPORTISTA
+         PANEL DE ENTRENADOR
       </Text>
 
       <Text style={styles.welcome}>
@@ -22,25 +22,19 @@ export default function DeportistaPanel(){
 
         <Pressable style={styles.button}>
             <Text style={styles.buttonText}>
-               👤 PERFIL
+               👥 DEPORTISTAS
             </Text>
         </Pressable>
 
         <Pressable style={styles.button}>
             <Text style={styles.buttonText}>
-               📅 HORARIO
+               📅 HORARIOS
             </Text>
         </Pressable>
 
         <Pressable style={styles.button}>
             <Text style={styles.buttonText}>
                ✅ ASISTENCIA
-            </Text>
-        </Pressable>
-
-         <Pressable style={styles.button}>
-            <Text style={styles.buttonText}>
-               💳 PAGOS
             </Text>
         </Pressable>
        

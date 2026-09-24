@@ -1,5 +1,5 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
+import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router/react-navigation';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
@@ -20,6 +20,8 @@ export default function RootLayout() {
         <Stack.Screen name="entrenador/login" options={{ headerShown: false }} />
         <Stack.Screen name="administracion/login" options={{ headerShown: false }} />
         <Stack.Screen name="administracion/panel" options={{ headerShown: false }} />
+        <Stack.Screen name="deportista/panel" options={{ headerShown: false }} />
+        <Stack.Screen name="entrenador/panel" options={{ headerShown: false }} />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

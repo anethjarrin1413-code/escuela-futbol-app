@@ -1,3 +1,4 @@
+import { useRouter } from 'expo-router';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 
 //View style = {styles.container} es todo lo que está dentro y va a pertenercer a la pantalla
@@ -5,6 +6,7 @@ import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 //Pressable <Pressable style={styles.button}> Permite que el usuario presione el botón
 
 export default function HomeScreen() {
+  const router = useRouter();
   return (
     <View style={styles.container}> 
 
@@ -40,7 +42,8 @@ export default function HomeScreen() {
         autoCapitalize = "none"
        />
 
-       <Pressable style={styles.button}>
+       <Pressable style={styles.button}
+        onPress = {() => router.push('/entrenador/panel')}>
           <Text style={styles.buttonText}>
             INGRESAR
           </Text>
